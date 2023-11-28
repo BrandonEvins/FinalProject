@@ -146,3 +146,4 @@ MonoBehaviour:
   sr: {fileID: 1999196407658192877}
   hoverColor: {r: 1, g: 1, b: 1, a: 0.5019608}
   cat: {fileID: 0}
+  brokeSound: {fileID: 8300000, guid: 664fba6a6d875824baa947460a162838, type: 3}

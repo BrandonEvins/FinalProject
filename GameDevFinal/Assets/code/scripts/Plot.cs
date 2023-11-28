@@ -12,7 +12,14 @@ public class Plot : MonoBehaviour
     private GameObject towerObj;
     public Cat cat;
     private Color startColor;
+    private AudioSource broke;
+    public AudioClip brokeSound;
 
+    public void Awake(){
+        GameObject brokeAudioSourceObject = new GameObject("BrokeAudioSource");
+        broke = brokeAudioSourceObject.AddComponent<AudioSource>();
+        broke.clip = brokeSound;
+    }
     private void Start(){
         startColor = sr.color;
     }
@@ -36,6 +43,7 @@ public class Plot : MonoBehaviour
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
 
         if(towerToBuild.cost > LevelManager.main.currency){
+            broke.Play();
             Debug.Log("You Broke");
             return;
         }
