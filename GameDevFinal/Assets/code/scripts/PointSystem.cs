@@ -29,4 +29,17 @@ public class PointSystem : MonoBehaviour
     {
         return totalPoints;
     }
+     public bool SpendPoints(int amount)
+    {
+        if (amount <= totalPoints)
+        {
+            totalPoints -= amount;
+            return true;
+        }
+        else
+        {
+            Debug.Log("Not enough points!");
+            return false;
+        }
+    }
 }
