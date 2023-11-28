@@ -12,6 +12,8 @@ using UnityEditor;
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float aps=4f;//attacks per second
     [SerializeField] private float freezeTime = 1f;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
 
     private float timeUntilFire;
 
@@ -21,16 +23,26 @@ using UnityEditor;
 
             if(timeUntilFire >= 1f/aps){
                 FreezeEnemies();
+                
                 timeUntilFire=0f;
             }
         }
 
+        private void Shoot(){
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+
+    }
+    public void Start(){
+        Shoot();
+    }
+
         private void FreezeEnemies(){
             RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2) 
         transform.position, 0f, enemyMask);
-
+        
         if(hits.Length>0){
             for(int i = 0; i<hits.Length; i++){
+                
                 RaycastHit2D hit = hits[i];
 
                 EnemyMovement em = hit.transform.GetComponent<EnemyMovement>();
