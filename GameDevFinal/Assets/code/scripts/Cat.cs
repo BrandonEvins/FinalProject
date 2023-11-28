@@ -27,11 +27,13 @@ public class Cat : MonoBehaviour
     private float timeUntilFire;
 
     private int level = 1;
+
+    private ObjectPool bulletPool;
     
     private void Start(){
         bpsBase = bps;
-        targetingRangeBase= targetingRange;
-
+        bulletPool = new ObjectPool(bulletPrefab, 10); // Set the initial pool size (adjust as needed)
+        
         upgradeButton.onClick.AddListener(Upgrade);
 
     }
@@ -57,11 +59,24 @@ public class Cat : MonoBehaviour
         }
     }
 
-    private void Shoot(){
-        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+    private void Shoot()
+    {
+        // Use the bullet pool to get a bullet
+        GameObject bulletObj = bulletPool.GetPooledObject();
+
+        // If the bullet pool is empty, create a new bullet
+        if (bulletObj == null)
+        {
+            bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        }
+        else
+        {
+            bulletObj.transform.position = firingPoint.position;
+            bulletObj.SetActive(true);
+        }
+
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
-
     }
 
     private void FindTarget(){
