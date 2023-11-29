@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
     public bool SpendCurrency(int amount)
     {
-        if (amount <= currency && pointSystem.SpendPoints(amount))
+        if (amount <= currency )
         {
             currency -= amount;
             return true;
