@@ -37,6 +37,12 @@ public class Cat : MonoBehaviour
         upgradeButton.onClick.AddListener(Upgrade);
 
     }
+    private Plot associatedPlot;
+
+    public void SetAssociatedPlot(Plot plot)
+    {
+        associatedPlot = plot;
+    }
 
     private void Update(){
         if(target == null){
@@ -102,7 +108,7 @@ public class Cat : MonoBehaviour
     }
 
     public void OpenUpgradeUI(){
-        upgradeUI.SetActive(true);
+        //upgradeUI.SetActive(true);
     }
 
     public void CloseUpgradeUI(){
@@ -111,16 +117,14 @@ public class Cat : MonoBehaviour
     }
 
     public void Upgrade(){
-        if(CalculateCost() > LevelManager.main.currency) return;
+        
+       /* Destroy(gameObject);
+        LevelManager.main.IncreaseCurrency(50);
 
-        LevelManager.main.SpendCurrency(CalculateCost());
-
-        level++;
-
-        bps = CalculateBPS();
-        targetingRange = CalculateRange();
-
-        CloseUpgradeUI();
+        if (associatedPlot != null)
+        {
+            associatedPlot.ClearCatReference();
+        }*/
     }
 
     private int CalculateCost(){

@@ -31,6 +31,10 @@ public class Plot : MonoBehaviour
     private void OnMouseExit(){
         sr.color = startColor;
     }
+    public void ClearCatReference()
+    {
+        cat = null;
+    }
 
     private void OnMouseDown(){
         if(UIManager.main.IsHoveringUI()) return;
@@ -52,5 +56,9 @@ public class Plot : MonoBehaviour
         
         towerObj = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
         cat = towerObj.GetComponent<Cat>();
+        if (cat != null)
+        {
+            cat.SetAssociatedPlot(this);
+        }
     }
 }

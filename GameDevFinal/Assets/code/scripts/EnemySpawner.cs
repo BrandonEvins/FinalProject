@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     [SerializeField] private float enemiesPerSecondCap=15f;
-
+    [SerializeField] private Text waveText;
+    [Header("Audio")]
+    [SerializeField] private AudioSource waveStartAudio;
+   
+    
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -26,13 +31,20 @@ public class EnemySpawner : MonoBehaviour
     public int enemiesLeftToSpawn;
     private float eps; //enemies per second
     private bool isSpawning=false;
+    private bool isWaveCoroutineRunning = false;
 
     private void Awake(){
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
     private void Start(){
-        StartCoroutine(StartWave());
+        if (!isWaveCoroutineRunning)
+        {
+            StartCoroutine(StartWave());
+            isWaveCoroutineRunning = true;
+        }
+        UpdateWaveText();
+        
     }
 
     private void Update(){
@@ -51,22 +63,46 @@ public class EnemySpawner : MonoBehaviour
         }
         
     }
+
+    
+    private void UpdateWaveText()
+    {
+    waveText.text = "Wave # " + currentWave;
+    }
+
     private void EnemyDestroyed(){
         enemiesAlive--;
     }
 
     private IEnumerator StartWave(){
+        PlayWaveStartAudio();
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
         enemiesLeftToSpawn=EnemiesPerWave();
         eps = EnemiesPerSecond();
-
+        
     }
+
+    private void PlayWaveStartAudio()
+    {
+        if (waveStartAudio != null && waveStartAudio.clip != null)
+        {
+            waveStartAudio.Play();
+        }
+        else
+        {
+            Debug.LogError("Wave start audio is not set up correctly.");
+        }
+    }
+
 
     private void EndWave(){
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
+        PlayerPrefs.SetInt("CurrentWave", currentWave);
+        PlayerPrefs.Save();
+        UpdateWaveText();
         StartCoroutine(StartWave());
     }
 
