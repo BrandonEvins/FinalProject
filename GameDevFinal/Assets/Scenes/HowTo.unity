@@ -625,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.0854, y: -63.770615}
+  m_AnchoredPosition: {x: 17.6, y: -22}
   m_SizeDelta: {x: 1557.6807, y: 757.1812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &792211789
@@ -648,16 +648,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Red and yellow enemy triangles will start
-
-    appearing in the masses.
-    Menu shows how much money you have, you start out with 100 and a "Basic Cat"
-    costs exactly that much. Lay down your first "Basic Cat" and watch as he demolishes
-    those triangles. As you rake in more dough you can add a "Slomo Cat" which slows
-    down enemies by half speed every 4 seconds if it is in range. As you gain more
-    money you can click on your "Cats" and upgrade them which will make their firing
-    speed faster. Do not let a single triangle pass or the game will end. If you
-    click the "Back" button while in the game all progress will be lost.'
+  m_text: "Welcome to \"Cat Cat Attack,\" where cunning strategy meets feline prowess!
+    Here's your guide to becoming the ultimate cat commander:\r\n\r\nObjective:\r\nDefend
+    your turf against waves of doggos by strategically placing your cats. Your goal
+    is to accumulate points, survive waves, and prevent any doggo from reaching the
+    end of the map.\r\n\r\nCats at Your Command:\r\n\r\nCat Cat (Cost: 100 Points):
+    Your basic defender.\n\r\nSlomomo (Cost: 150 Points): Slows down all cats within
+    range for 1 second every 4 seconds. Use Slomomo strategically to control the
+    pace of the battle.\r\n\r\nBig Cat (Cost: 200 Points): The powerhouse. Big Cat
+    deals double damage compared to Cat Cat. \n\r\nGetting Started:\r\n\r\nYou start
+    with 100 points, so your first move is crucial. Choose wisely where Cat Cat goes
+    and save up for Slomomo, and Big Cat.\r\n\nControls:\r\n\r\nAll controls are
+    mouse-based. Click to select and place your cats on the map.\r\n\nStrategic Tips:\r\n\r\nCat
+    placement is permanent; you can't sell them. Plan your defense strategically.\r\nSmall
+    doggos are worth 25 points each, and big doggos are worth 50 points. Use this
+    information to plan your cat army.\r\nSlomomo's slowing effect can be a game-changer,
+    especially against fast waves.\r\nBig Cat packs a punch \u2013 use it strategically
+    to handle tougher waves.\r\n\nGame Over:\r\nIf a single doggo makes it to the
+    end of the map, it's game over. So, plan your defense wisely and become the ultimate
+    Cat Commander!\r\n\r\nGood luck, and may your paws be ever victorious!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -684,13 +693,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 58
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -953,8 +962,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -618.39, y: -482.59}
-  m_SizeDelta: {x: 290.7376, y: 80.4602}
+  m_AnchoredPosition: {x: -629.62964, y: -493.82962}
+  m_SizeDelta: {x: 268.2585, y: 57.9809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882668655
 MonoBehaviour:

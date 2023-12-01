@@ -4919,6 +4919,8 @@ MonoBehaviour:
   rb: {fileID: -1427309897445067922}
   bulletSpeed: 5
   bulletDamage: 1
+  shootingAudioSource: {fileID: 1942103761502052435, guid: 12c3f4a2afee6d740b2bfcbfd4826703, type: 3}
+  hitAudioSource: {fileID: 2842816810520922302, guid: 34e4e8aac177cb64195ed5f0892e84c4, type: 3}
   shootSound: {fileID: 8300000, guid: 31d0bee05b67fc24fa5c52cecd60267b, type: 3}
   hitSound: {fileID: 8300000, guid: bb0a4611c634a2547a0736177b4d8144, type: 3}
 --- !u!212 &1814652077862294696

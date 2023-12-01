@@ -557,130 +557,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234241300}
   m_CullTransparentMesh: 1
---- !u!1 &257456966
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 257456967}
-  - component: {fileID: 257456970}
-  - component: {fileID: 257456969}
-  - component: {fileID: 257456968}
-  m_Layer: 5
-  m_Name: PlayButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &257456967
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257456966}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 793435282}
-  - {fileID: 834473742}
-  - {fileID: 578515231}
-  - {fileID: 2100814565}
-  m_Father: {fileID: 362902893}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.46698, y: 153}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &257456968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257456966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 257456969}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &257456969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257456966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &257456970
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257456966}
-  m_CullTransparentMesh: 1
 --- !u!1 &285757088
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +677,7 @@ GameObject:
   - component: {fileID: 362902892}
   - component: {fileID: 362902891}
   - component: {fileID: 362902890}
+  - component: {fileID: 362902894}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -884,10 +761,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1447348424}
-  - {fileID: 257456967}
   - {fileID: 1896328845}
   - {fileID: 477464689}
   - {fileID: 818440230}
+  - {fileID: 793435282}
+  - {fileID: 834473742}
+  - {fileID: 578515231}
+  - {fileID: 2100814565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -895,6 +775,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &362902894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362902889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cec4ed209a49d94b846d2cbc8272445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreText: {fileID: 818440231}
 --- !u!1 &383313934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,7 +1311,7 @@ GameObject:
   - component: {fileID: 578515237}
   - component: {fileID: 578515236}
   - component: {fileID: 578515235}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,17 +1325,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578515230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 849722655}
-  m_Father: {fileID: 257456967}
+  m_Father: {fileID: 362902893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -340}
+  m_AnchoredPosition: {x: -16.828, y: -360.52}
   m_SizeDelta: {x: 434.789, y: 94.792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578515232
@@ -1467,7 +1360,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1548,9 +1441,9 @@ AudioSource:
   m_GameObject: {fileID: 578515230}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 16f49d304a8d24d41bfe0b4e4673adb8, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 037d5dc578277f243a8f3907c853cf61, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1654,7 +1547,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 578515237}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
-          m_MethodName: HoverSound
+          m_MethodName: HoverSoundAndScaleUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1671,6 +1564,22 @@ MonoBehaviour:
         - m_Target: {fileID: 578515237}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 578515237}
+          m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
+          m_MethodName: ResetScale
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1785,7 +1694,7 @@ GameObject:
   - component: {fileID: 793435287}
   - component: {fileID: 793435286}
   - component: {fileID: 793435288}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,18 +1708,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793435281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 828304879}
-  m_Father: {fileID: 257456967}
+  m_Father: {fileID: 362902893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000000056361, y: -35.965}
-  m_SizeDelta: {x: 277.7523, y: 101.93}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 437.469, y: 279.083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793435283
 MonoBehaviour:
@@ -1888,8 +1797,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2d32c75ccfa585444b1e11170991759d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1930,9 +1839,9 @@ AudioSource:
   m_GameObject: {fileID: 793435281}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 16f49d304a8d24d41bfe0b4e4673adb8, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 037d5dc578277f243a8f3907c853cf61, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2036,7 +1945,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 793435286}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
-          m_MethodName: HoverSound
+          m_MethodName: HoverSoundAndScaleUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2053,6 +1962,22 @@ MonoBehaviour:
         - m_Target: {fileID: 793435286}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793435286}
+          m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
+          m_MethodName: ResetScale
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2096,7 +2021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.467, y: -101}
+  m_AnchoredPosition: {x: -16.828, y: -280.48}
   m_SizeDelta: {x: 313.94, y: 65.278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &818440231
@@ -2152,7 +2077,7 @@ GameObject:
   - component: {fileID: 828304879}
   - component: {fileID: 828304881}
   - component: {fileID: 828304880}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2211,7 +2136,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY
+  m_Text: 
 --- !u!222 &828304881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2235,7 +2160,7 @@ GameObject:
   - component: {fileID: 834473748}
   - component: {fileID: 834473747}
   - component: {fileID: 834473746}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2249,18 +2174,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834473741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1001611311}
-  m_Father: {fileID: 257456967}
+  m_Father: {fileID: 362902893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000026703, y: -157}
-  m_SizeDelta: {x: 277.7523, y: 101.93}
+  m_AnchoredPosition: {x: -16.828, y: -186}
+  m_SizeDelta: {x: 136.823, y: 123.675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834473743
 MonoBehaviour:
@@ -2284,7 +2209,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2338,8 +2263,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 474ff5943b3260e4fbd3da75dc80e9a8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2380,9 +2305,9 @@ AudioSource:
   m_GameObject: {fileID: 834473741}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 16f49d304a8d24d41bfe0b4e4673adb8, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 037d5dc578277f243a8f3907c853cf61, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2486,7 +2411,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 834473746}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
-          m_MethodName: HoverSound
+          m_MethodName: HoverSoundAndScaleUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2503,6 +2428,22 @@ MonoBehaviour:
         - m_Target: {fileID: 834473746}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 834473746}
+          m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
+          m_MethodName: ResetScale
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2649,7 +2590,7 @@ GameObject:
   - component: {fileID: 849722655}
   - component: {fileID: 849722657}
   - component: {fileID: 849722656}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2976,7 +2917,7 @@ GameObject:
   - component: {fileID: 1001611311}
   - component: {fileID: 1001611313}
   - component: {fileID: 1001611312}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2999,8 +2940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -23.918999}
+  m_SizeDelta: {x: 0, y: 47.837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001611312
 MonoBehaviour:
@@ -3035,7 +2976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: 
 --- !u!222 &1001611313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3429,7 +3370,7 @@ GameObject:
   - component: {fileID: 1526754529}
   - component: {fileID: 1526754531}
   - component: {fileID: 1526754530}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4120,13 +4061,13 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -828688081
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1896328849
@@ -4579,7 +4520,7 @@ GameObject:
   - component: {fileID: 2100814571}
   - component: {fileID: 2100814570}
   - component: {fileID: 2100814569}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4599,11 +4540,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1526754529}
-  m_Father: {fileID: 257456967}
+  m_Father: {fileID: 362902893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.644, y: -433}
+  m_AnchoredPosition: {x: -16.828, y: -455}
   m_SizeDelta: {x: 189.2889, y: 52.7803}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100814566
@@ -4628,7 +4569,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4734,7 +4675,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2100814569}
           m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
-          m_MethodName: HoverSound
+          m_MethodName: HoverSoundAndScaleUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4760,6 +4701,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2100814569}
+          m_TargetAssemblyTypeName: btnFX, Assembly-CSharp
+          m_MethodName: ResetScale
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2100814571
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4769,9 +4726,9 @@ AudioSource:
   m_GameObject: {fileID: 2100814564}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 16f49d304a8d24d41bfe0b4e4673adb8, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 037d5dc578277f243a8f3907c853cf61, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4780,7 +4737,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.767517
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5092,9 +5049,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1022296784}
     m_Modifications:
+    - target: {fileID: 253284806584814831, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1056102972369847691, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
       propertyPath: m_Name
       value: MasterVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056102972369847691, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2150844749715059018, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -5127,6 +5092,18 @@ PrefabInstance:
     - target: {fileID: 3365597456969153766, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407143492490382895, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778353604611577089, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329733642284172236, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5386382592251470909, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5219,6 +5196,14 @@ PrefabInstance:
     - target: {fileID: 7083286067696095230, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977706538168355028, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110305946122547495, guid: cb64ffc543bea3e4da5a67cbbd0f736c, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

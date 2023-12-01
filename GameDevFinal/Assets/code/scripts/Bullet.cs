@@ -13,8 +13,9 @@ public class Bullet : MonoBehaviour
     [SerializeField] private int bulletDamage = 1;
 
      private Transform target;
-    private AudioSource shootingAudioSource;
-    private AudioSource hitAudioSource;
+    [Header("Audio")]
+    [SerializeField] private AudioSource shootingAudioSource;
+    [SerializeField] private AudioSource hitAudioSource;
 
     public AudioClip shootSound; // Assign the shoot sound effect in the Unity Editor
     public AudioClip hitSound;   // Assign the hit sound effect in the Unity Editor
@@ -30,6 +31,8 @@ public class Bullet : MonoBehaviour
 
         shootingAudioSource.clip = shootSound;
         hitAudioSource.clip = hitSound;
+        shootingAudioSource.volume = 0.22f;
+        hitAudioSource.volume = 0.22f;
 
         // Ensure that the audio sources persist between scenes
         DontDestroyOnLoad(shootingAudioSourceObject);
@@ -39,7 +42,7 @@ public class Bullet : MonoBehaviour
     public void SetTarget(Transform _target)
     {
         target = _target;
-        PlayShootSound();
+       PlayShootSound();
     }
 
     private void FixedUpdate()

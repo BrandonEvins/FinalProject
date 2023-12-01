@@ -102,6 +102,8 @@ MonoBehaviour:
   rb: {fileID: -7734283502719037236}
   bulletSpeed: 10
   bulletDamage: 3
+  shootingAudioSource: {fileID: 7186640988895014440, guid: dd010652522634d43b65377ff859bcf7, type: 3}
+  hitAudioSource: {fileID: 2842816810520922302, guid: 34e4e8aac177cb64195ed5f0892e84c4, type: 3}
   shootSound: {fileID: 8300000, guid: 9866f493d0968d94386d6deccb03bd89, type: 3}
   hitSound: {fileID: 8300000, guid: bb0a4611c634a2547a0736177b4d8144, type: 3}
 --- !u!50 &-7734283502719037236

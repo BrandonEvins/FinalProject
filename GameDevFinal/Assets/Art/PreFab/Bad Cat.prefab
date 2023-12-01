@@ -282,6 +282,8 @@ MonoBehaviour:
   rotationSpeed: 300
   bps: 1
   baseUpgradeCost: 100
+  shootingAudioSource: {fileID: 1942103761502052435, guid: 12c3f4a2afee6d740b2bfcbfd4826703, type: 3}
+  hitAudioSource: {fileID: 0}
 --- !u!1 &8445224504150217236
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,7 @@ public class Cat : MonoBehaviour
     private int level = 1;
 
     private ObjectPool bulletPool;
+
     
     private void Start(){
         bpsBase = bps;
@@ -83,6 +84,8 @@ public class Cat : MonoBehaviour
 
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
+
+        
     }
 
     private void FindTarget(){
@@ -118,7 +121,7 @@ public class Cat : MonoBehaviour
 
     public void Upgrade(){
         
-       /* Destroy(gameObject);
+        /*Destroy(gameObject);
         LevelManager.main.IncreaseCurrency(50);
 
         if (associatedPlot != null)
